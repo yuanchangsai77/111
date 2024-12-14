@@ -1,0 +1,35 @@
+# config.py
+import pygame
+
+# Colors
+WHITE = (255, 255, 255)
+BLACK = (0, 0, 0) 
+RED = (255, 0, 0)
+BLUE = (0, 156, 255)
+YELLOW = (255, 230, 0)
+GHOST_COLORS = [(255,0,0), (255,153,51), (0,204,255), (255,153,204)]
+
+# Screen dimensions
+CELL_SIZE = 20
+MAP_WIDTH = 28  # 地图宽度(格子数)
+MAP_HEIGHT = 31 # 地图高度(格子数)
+SCREEN_WIDTH = MAP_WIDTH * CELL_SIZE
+SCREEN_HEIGHT = MAP_HEIGHT * CELL_SIZE
+WALL_WIDTH = CELL_SIZE  # 墙体宽度
+PATH_WIDTH = CELL_SIZE * 1.5  # 通道宽度
+PLAYER_SIZE = CELL_SIZE - 5  # 玩家大小略小于格子
+GHOST_SIZE = CELL_SIZE
+
+# Game states
+STATE_MENU = 0
+STATE_PLAYING = 1 
+STATE_PAUSED = 2
+STATE_GAME_OVER = 3
+
+# Game settings
+PLAYER_SPEED = 2
+GHOST_SPEED = 1
+INITIAL_LIVES = 5
+POWER_PELLET_DURATION = 250
+
+
